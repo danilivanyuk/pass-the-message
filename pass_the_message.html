@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pass the Message</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+    .container{
+      height: 100vh;
+      background-color: #bdf1f5;
+      display: flex;
+      justify-content: center;
+    }
+    .main-form{
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    #submit_btn{
+      margin: 5px auto;
+      width: 100px;
+      height: 30px;
+      border-radius: 30px;
+      outline: none;
+      border: 1px solid #000;
+      cursor: pointer;
+      background-color: #bdf1f5;
+      transition: all 200ms ease-in-out;
+    }
+    #submit_btn:hover{
+      background-color: #fff;
+    }
+    .input{
+      margin-top: 5px;
+      outline: none;
+      height: 25px;
+      border-radius: 15px;
+      border: none;
+      padding: 5px;
+    }
+    #output{
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="main-form">
+      <h3>A Message You Would Like To Pass</h3>
+      <input type="text" class="input">
+      <button id="submit_btn">Submit</button>
+      <h3>Last Message Delivered:</h3>
+      <h4 id="output"></h4>
+    </div>
+  </div>
+  <script src="pass_the_message.js"></script>
+</body>
+</html>
